@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>application.auth</OriginalElement>
+  <nodes>
+    <node x="589.9999999999999" y="0.0">application.auth.Authenticator</node>
+    <node x="368.4999999999999" y="160.0">application.auth.AdminValidator</node>
+    <node x="702.1125" y="409.0">application.auth.ChainBuilder</node>
+    <node x="1020.4999999999999" y="173.5">application.auth.NullValidator</node>
+    <node x="32.5" y="160.0">application.auth.UserValidator</node>
+    <node x="0.0" y="409.0">application.auth.Validator</node>
+    <node x="704.4999999999999" y="173.5">application.auth.WrongPasswordValidator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="application.auth.AdminValidator" target="application.auth.Authenticator">
+      <point x="-79.0" y="-99.5" />
+      <point x="447.4999999999999" y="130.0" />
+      <point x="694.7222222222222" y="130.0" />
+      <point x="-83.77777777777771" y="45.0" />
+    </edge>
+    <edge source="application.auth.NullValidator" target="application.auth.Authenticator">
+      <point x="74.0" y="-86.0" />
+      <point x="1242.5" y="120.0" />
+      <point x="904.1666666666665" y="120.0" />
+      <point x="125.66666666666663" y="45.0" />
+    </edge>
+    <edge source="application.auth.ChainBuilder" target="application.auth.WrongPasswordValidator">
+      <point x="0.0" y="-72.5" />
+      <point x="865.1125" y="389.0" />
+      <point x="852.4999999999999" y="389.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="application.auth.Validator" target="application.auth.UserValidator">
+      <point x="0.0" y="-72.5" />
+      <point x="-79.0" y="99.5" />
+    </edge>
+    <edge source="application.auth.ChainBuilder" target="application.auth.UserValidator">
+      <point x="-130.39999999999998" y="-72.5" />
+      <point x="734.7125" y="389.0" />
+      <point x="269.5" y="389.0" />
+      <point x="79.0" y="99.5" />
+    </edge>
+    <edge source="application.auth.ChainBuilder" target="application.auth.Authenticator">
+      <point x="130.39999999999998" y="-72.5" />
+      <point x="995.5124999999999" y="389.0" />
+      <point x="1327.0" y="389.0" />
+      <point x="1327.0" y="110.0" />
+      <point x="946.0555555555554" y="110.0" />
+      <point x="167.55555555555554" y="45.0" />
+    </edge>
+    <edge source="application.auth.UserValidator" target="application.auth.Authenticator">
+      <point x="79.0" y="-99.5" />
+      <point x="269.5" y="120.0" />
+      <point x="652.8333333333333" y="120.0" />
+      <point x="-125.66666666666663" y="45.0" />
+    </edge>
+    <edge source="application.auth.WrongPasswordValidator" target="application.auth.Authenticator">
+      <point x="-74.0" y="-86.0" />
+      <point x="0.0" y="45.0" />
+    </edge>
+    <edge source="application.auth.ChainBuilder" target="application.auth.AdminValidator">
+      <point x="-65.19999999999993" y="-72.5" />
+      <point x="799.9125" y="379.0" />
+      <point x="526.4999999999999" y="379.0" />
+      <point x="0.0" y="99.5" />
+    </edge>
+    <edge source="application.auth.ChainBuilder" target="application.auth.NullValidator">
+      <point x="65.20000000000005" y="-72.5" />
+      <point x="930.3125" y="379.0" />
+      <point x="1168.5" y="379.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="663.5" y="277.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
